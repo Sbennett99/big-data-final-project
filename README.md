@@ -18,4 +18,7 @@
     - re: a library with various regex tools to filter out unwanted characters
     - StopWordsRemover: to retrieve a list stop words
     - pandas: to create a data frame from the processed data
-    - 
+    - matplotlib.pyplot: to set the size of the desired plot
+    - seaborn: to create a graph from the data frame
+### Steps to Process the data
+
