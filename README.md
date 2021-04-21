@@ -10,3 +10,12 @@
   - I got the PDF of Eragon from [PDF Drive](https://www.pdfdrive.com/eragon-d37470593.html) and used an online [PDF to txt Converter](https://www.zamzar.com/convert/pdf-to-txt/) to get a txt file to process
 
 ## Processing the Data
+### Tools to process the data
+  Databricks Community - A free non professional cloud based processing tool
+  - Python - all data is processed using the Python Programming Language and within Python the following librarys were used
+    - urllib.request: to retrieve the txt from a given url
+    - PySpark: to actually perform all processing
+    - re: a library with various regex tools to filter out unwanted characters
+    - StopWordsRemover: to retrieve a list stop words
+    - pandas: to create a data frame from the processed data
+    - 
