@@ -6,6 +6,7 @@
   - For the data of this project I decided to use a book that I really enjoyed reading and as a bonus is of decent length comming in at around 400 pages. The name of this book is Eragon by Christopher Paolini
 
 ![](Eragon_book_cover.png)
+
 [Eragon.txt](https://github.com/Sbennett99/big-data-final-project/blob/25e9e511d9bd818348fb2b9b5843ccdf6fa93500/Eragon.txt)
 - Where its From
   - I got the PDF of Eragon from [PDF Drive](https://www.pdfdrive.com/eragon-d37470593.html) and used an online [PDF to txt Converter](https://www.zamzar.com/convert/pdf-to-txt/) to get a txt file to process
