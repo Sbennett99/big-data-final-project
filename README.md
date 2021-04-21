@@ -107,10 +107,11 @@ plt.figure(figsize=(10,3))
 
 sns.barplot(xlabel, ylabel, data=df, palette="rocket").set_title(title)
 ```
-<div align="center">*graph made above displayed in results*<\div>
+<div align="center">*graph made above displayed in results*</div>
 
 ### The Results
 ![](https://github.com/Sbennett99/big-data-final-project/blob/74323633a4cf57272c643fc8e3b226f01bff58ce/GraphOfEragonWords.png)
+
 The words shown in this barplot are the top ten words used in the entirety of the book Eragon. The words from greatest to least are as follows [eragon, said, brom, saphira, one, like, murtagh, don't, back, know]. To someone who knew nothing about the book, they may find the names of may decide that the names of the main characters are as follows [eragon, brom, saphira, murtagh].
 
 ### Websites I found Useful
