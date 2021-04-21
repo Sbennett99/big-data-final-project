@@ -115,5 +115,7 @@ The words shown in this barplot are the top ten words used in the entirety of th
 
 ### Websites I found Useful
 [StackOverflow: Punctuation removal using Strip](https://stackoverflow.com/questions/18429143/strip-punctuation-with-regex-python)
+
 [PDFdrive: Source of my data](https://www.pdfdrive.com/eragon-d37470593.html)
+
 [PDF to TXT Converter: For converting my data from PDF to .txt](https://www.zamzar.com/convert/pdf-to-txt/)
