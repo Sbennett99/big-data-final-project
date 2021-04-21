@@ -24,9 +24,43 @@
     - seaborn: to create a graph from the data frame
 ### Steps to Process the data
 #### Importing the data for processing
-
+- Import necessary Library(s) for the job
+```Python
+import urllib.request as u
+```
+- Retrieve the Data
+```Python
+stringInURL = "https://raw.githubusercontent.com/Sbennett99/big-data-final-project/main/Eragon.txt"
+stringTmp = "/tmp/Eragon.txt"
+stringDbfs = "/data/Eragon.txt"
+u.urlretrieve(stringInURL, stringTmp)
+```
+Move the Data into Databricks
+```Python
+filePrefix = "file:"
+dbfsPrefix = "dbfs:"
+dbutils.fs.mv(filePrefix + stringTmp, dbfsPrefix + stringDbfs)
+```
+Create an RDD using data to prepare the data for processing using PySpark
+```Python
+nservers = 4
+inRDD = sc.textFile(dbfsPrefix + stringDbfs,nservers)
+```
 #### Map - Filter - Reduce
-
+- Import necessary Library(s) for the job
+```Python
+import string
+import re
+from pyspark.ml.feature import StopWordsRemover
+```
+- Flat map the data, spliting everything by spaces - striping the extra spaces and pesky characters(Characters that nothing will recognize as what they are for some reason) - then forcing everything to lowercase
+```Python
+messyWordsRDD = inRDD.flatMap(lambda l: l.lower().strip().strip(".,“").strip(string.punctuation).split(" "))
+```
+- Clean the data of all non letter characters(for the most part, some punctuation would not filter out ) 
+```Python
+cleanedWordsRDD = messyWordsRDD.filter(lambda word: re.sub(r'[^a-zA-Z]' ,'',word))
+```
 #### Ploting the processed data
 
 
